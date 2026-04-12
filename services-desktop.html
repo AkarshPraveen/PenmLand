@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Penm'Land Properties</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "outline": "#747781",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f7f9fc",
+                    "on-surface-variant": "#444650",
+                    "secondary": "#1FC28A",
+                    "surface-container-low": "#f2f4f7",
+                    "secondary-container": "#6cfcbf",
+                    "surface-container": "#eceef1",
+                    "surface": "#f7f9fc",
+                    "on-secondary-fixed-variant": "#005237",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "on-tertiary-container": "#999797",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "primary-fixed": "#dae2ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#b2c5ff",
+                    "surface-bright": "#f7f9fc",
+                    "primary-container": "#0B2C6B",
+                    "error-container": "#ffdad6",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed-variant": "#294483",
+                    "on-primary-fixed": "#001848",
+                    "inverse-surface": "#2d3133",
+                    "surface-container-high": "#e6e8eb",
+                    "tertiary": "#1b1b1b",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#191c1e",
+                    "tertiary-container": "#303030",
+                    "surface-dim": "#d8dadd",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#425c9d",
+                    "secondary-fixed-dim": "#4bdfa4",
+                    "on-primary-container": "#7d96db",
+                    "on-secondary-fixed": "#002114",
+                    "surface-variant": "#e0e3e6",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c4c6d2",
+                    "on-secondary-container": "#00734f",
+                    "primary": "#001847",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed": "#6cfcbf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "2xl": "2rem",
+                    "3xl": "2.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope", "sans-serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .lithic-shadow {
+        box-shadow: 0px 20px 40px rgba(11, 44, 107, 0.08);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-[0px_20px_40px_rgba(11,44,107,0.08)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto w-full">
+<div class="h-10">
+<img alt="Penm'Land Properties" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujqN1DTP_2w3-JPpqiBDySmkbqwk_yV4nkTrdBo4pJNgtlra-MDXHQWnO-Laxd4p5v73sl5WX0AMmWUNK6y9hETQFoifpOcWlAbFzjsD_mhMm50nhFKF5Va3oWTz6LdTxsXl5j0QPFam_u-pBTvt6wVGpr-J5tu6XcHO3byOWg8qsm7Lfb6AoqMJIGEJ67WLmxIjU_vcD6Ib1OZtD8XyReD96yqrcx2Z9_84_Kx9ZjJJNbgEoKB-LIgHe1qkEmU3hamO7G3J6T5MoY"/>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-manrope text-sm tracking-widest uppercase text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Portfolio</a>
+<a class="font-manrope text-sm tracking-widest uppercase text-[#0B2C6B] font-bold border-b-2 border-secondary pb-1" href="#">Services</a>
+<a class="font-manrope text-sm tracking-widest uppercase text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">About</a>
+<a class="font-manrope text-sm tracking-widest uppercase text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-[#0B2C6B] text-white px-8 py-3 rounded-xl font-headline font-bold text-sm tracking-wide transition-all hover:scale-95 duration-200">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-[1920px] mx-auto px-12 mb-20 text-center">
+<span class="font-label text-sm font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">Comprehensive Solutions</span>
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold text-primary-container leading-tight tracking-tight mb-6">
+                Integrated Property<br/>Excellence.
+            </h2>
+<p class="text-on-surface-variant text-xl leading-relaxed max-w-2xl mx-auto">
+                From structural engineering to interior aesthetics and legal compliance, we provide a full-spectrum approach to modern property development.
+            </p>
+</section>
+<!-- Services Stack -->
+<div class="max-w-[1920px] mx-auto px-12 space-y-16 pb-24">
+<!-- 1. Construction -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="h-full min-h-[500px] relative">
+<img alt="Construction Service" class="w-full h-full object-cover" data-alt="High-angle shot of a large-scale modern construction site with heavy machinery and structural steel framing in progress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Yk_aqc5l51J6kQ6lsInhddJpN1utkIPRfFMObPVVa1yR1axVdJxHWXuDBYoxhUCyYXkDJkIkFypcKtsL3NZ2rJiGNdFUiwCgapSc2Uw_9LMtnZ3h4RYFCCMokMeX2LvuUaY1AYKW1e9IjI3bK-C8pyW2SHraSCkM6XyaGSE7kbM3K8x9_bCaNOP0LNQ4qweRJ5aOUr3TwVNQi1-5DR513gvEHOg5qydi27uh4T5iA00G0IzGWkdNJA0WEdlhOYrhAuBXHeqvHcL3"/>
+<div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">01</span>
+</div>
+</div>
+<div class="p-12 pr-16">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Core Development</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">Precision Construction</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Our construction division sets the industry standard for structural integrity and technical precision. We leverage advanced building technologies and rigorous quality control to deliver enduring landmarks that exceed modern engineering expectations.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 2. Interior -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="p-12 pl-16 order-2 md:order-1">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Aesthetic Finishes</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">Bespoke Interior Design</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Transforming interior spaces into curated experiences. Our designers blend ergonomics with high-end materials to create functional masterpieces that reflect personal identity and modern luxury, from residential penthouses to corporate headquarters.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+<div class="h-full min-h-[500px] relative order-1 md:order-2">
+<img alt="Interior Design" class="w-full h-full object-cover" data-alt="Luxurious minimalist living room with custom walnut cabinetry, Italian marble accents, and designer lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHgxJ-BMnep4PesJG0gYdrsVXPNAsjNvMhD-o6CWCy_iUllcSvaSGqsynyTrr8bOMTeT3x1qY771WTOjOnbiw0LMZj5GPeCyAtLdAt5tCYInT83XbT5pe2J4rIG7p2AtZB3HJD8kD95vRtGxzQtivMHzPlnBQrEAH59u_P0QN_YdP40sI7RWSIntAtERzcLRj_k0D7hyk6EI30CQZ8DYR0O7JjfT9dvtfxlP3pXFAq8RY32kQy64eOEU0fMLAp7qY9PqaK1eC4x4sK"/>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">02</span>
+</div>
+</div>
+</div>
+<!-- 3. Exterior -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="h-full min-h-[500px] relative">
+<img alt="Exterior Design" class="w-full h-full object-cover" data-alt="Close-up of a contemporary building facade featuring innovative textured cladding and integrated architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGkAW7ezUck6g-CX_NcTgNRgmsoJ2KeDDOiEvBI6F2trCWfIYMrrpZ_TJuaG50qYP0TNpr0alim3us2-Vd5WDNt9dsuPZ6AgeYF-zJZFTUe6yzEa4pMCQTNBOUghaU3MtVlGMgYvikiHUgu6Kpc7jKXBbkl4BqBohosD58Nnev6Y1b1w3yDfTjFohQH-0gZ2F5QUrppUiEEHNL1FjHJZLlOnuLkn8aLIxIoHRRGkjesAAy9YKsTHyJMdcfoTCSJNyScH7RO2NVdd3j"/>
+<div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">03</span>
+</div>
+</div>
+<div class="p-12 pr-16">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Facade Engineering</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">Architectural Exteriors</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        The face of a building defines its character. We specialize in advanced facade systems, utilizing climate-responsive materials and iconic geometric forms to ensure your property makes a powerful and lasting visual statement.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 4. Landscape -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="p-12 pl-16 order-2 md:order-1">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Natural Integration</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">Landscape Architecture</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Merging built environments with the natural world. Our landscape architects design sustainable ecosystems, private gardens, and urban green spaces that enhance biodiversity while providing serene retreats from the city.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+<div class="h-full min-h-[500px] relative order-1 md:order-2">
+<img alt="Landscape Design" class="w-full h-full object-cover" data-alt="Modern terrace garden with stone pathways, manicured native plants, and a tranquil water feature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmg5SjA0cpb5Bwb9Bgl7ZT4U59YY5IDz2fnUIQ-CUKBDRnucMVcNJFARmNXw_bQey-I6y0Zc-38FxT4w-Z8tokKOtGdtPtmULtjtyh6e-T2o_yzaxajswCq2vRyF04uRNpqtdhtrkbbTjmOQQq8aPtARjVcVjIoT-yU7aqsvrBAMDFToQcqxhCe09wp7xztv9JX9336UCUwZOLEmdztsSJiDD2lclG38kCT0s6qhhOaSpdTKOHoz76M40DMqeEf_FDDBYQcClNk5dG"/>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">04</span>
+</div>
+</div>
+</div>
+<!-- 5. 3D Design and Rendering -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="h-full min-h-[500px] relative">
+<img alt="3D Design" class="w-full h-full object-cover" data-alt="Photorealistic 3D architectural rendering of a futuristic skyscraper with complex lighting and reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrd8qzsKXvkpKzHmU58Zg91CNaFDL2i_FmHKZr37oO_LKAI-M5Ch72jV2Gqw4LcmfYo0N2UnpcguHOK9BSRqXqrb3FIDMpTpOtE3W90umRBxazZisV8SZgTSIXJZ-nfTL0m-MB8rlnx8CN8Lfa9fRCbF5WH335ZYWIU58qbQVuqwOo-ar-D-79PZhrpWpZmqxyGXsgT8yD8ibDGMFDDcER431xgycERK34QakRZtKKud75t68s4vedqmIn-GXR4WwcUJBzdBlNG2Hc"/>
+<div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">05</span>
+</div>
+</div>
+<div class="p-12 pr-16">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Visual Prototyping</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">3D Design &amp; Rendering</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        See the future before it's built. Our visualization studio creates hyper-realistic 3D walkthroughs and photostatic renders, allowing clients to experience spatial flows, lighting conditions, and material textures with absolute clarity.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 6. Renovation -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="p-12 pl-16 order-2 md:order-1">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Heritage &amp; Modernization</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">Strategic Renovation</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Breathing new life into existing structures. We specialize in adaptive reuse and high-end restorations, upgrading heritage buildings with modern amenities and structural enhancements while preserving their unique historical character.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+<div class="h-full min-h-[500px] relative order-1 md:order-2">
+<img alt="Renovation" class="w-full h-full object-cover" data-alt="Before and after split shot of a historic warehouse being transformed into a sleek, industrial-style modern office loft" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg6UtXvJiOd8llhTgKNOxxa80JMtxz0mk-bx0suavgPIsvZyZQ5tw7ORv-QQy3ZPO3aBcD74MoTPJVnYudG8hb8kWizwmITTXkrwnsWucqJXpRECoAqqsaztb1A2wB9Cxl7Utqkyb7pHav2we6skXPqD0IWDHw3Q3hahxOV3ET40Fv4q53sUX1iRiJ1aH1b_AYeaD1r2EaRVEqP2rnW8yINq3FRSIQcYQBjTjBxA79B4zdIKFS1K7RJ8u-XzSEUDuRknu8RuicGw2E"/>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">06</span>
+</div>
+</div>
+</div>
+<!-- 7. Real Estate -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="h-full min-h-[500px] relative">
+<img alt="Real Estate" class="w-full h-full object-cover" data-alt="Modern real estate office with glass walls, architectural models on display, and a professional consultation taking place" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwRHlFqpQAqfCR3AoIk_TDufWOzFmEyKf-KzIOzS5iO96GvDa8lXxNWZaFYyXqTgGUITADQL-qMn1hPJqxoccjQ-P-A01YsWn9C2tM9VRrOgBUPB4fB_UAEiSGABzg6qrtsPVzd8tPyxINgveek16Wie7Jcmyatw8ImbelkX1Am7sn04ja-4RiTrhDvBbTWq5Tgpl50tLxPyscx3GfmcMCt6UR-tjE12b13UuEuFIiAIKPRiw9c8crc4rAzUZDBcaO2qDx_oEvd3Y3"/>
+<div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">07</span>
+</div>
+</div>
+<div class="p-12 pr-16">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Market Excellence</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">Real Estate Services</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Navigating the premium property market with expert precision. Our real estate division offers exclusive access to high-yield investment opportunities, luxury residential acquisitions, and strategic asset management for global investors.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 8. Legal Documentation -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(11,44,107,0.04)]">
+<div class="p-12 pl-16 order-2 md:order-1">
+<div class="mb-6">
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Security &amp; Compliance</span>
+<h3 class="font-headline text-4xl font-bold text-primary-container mt-2">Legal Documentation</h3>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Ensuring your investments are protected through rigorous legal oversight. We handle complex zoning permits, land titles, and compliance documentation, providing a seamless and secure administrative path for every development project.
+                    </p>
+<button class="flex items-center gap-2 text-primary-container font-bold text-base uppercase tracking-widest hover:gap-4 transition-all">
+                        Inquire Service
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+<div class="h-full min-h-[500px] relative order-1 md:order-2">
+<img alt="Legal Services" class="w-full h-full object-cover" data-alt="Close-up of official legal architectural documents and blueprints with a fountain pen on a mahogany desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhtUXJj225vr1vkd8yI4vDFx-5f94uPeQLLpCmPN-Wd2YLmUH2a4LWqoyxV1_ddnHf4Ht9rhGGsx-olTaCYsQmh03V5cpu-THUWQC9eONjU96H6ZzjM6CFfuq81tJBHKf2QM1Wnf9cKO-LJ-mez_5vAvzgGM_WzX5IQLQlVnMYTN3UXap8jbdIMVJf_mEaolRINnms1kCxf557C_2oz5-3y5AadGkcEOr0OgNvSfqOsCwvzhCRUAxKUbyqSAL_OLRMNRPfP3KyFtqQ"/>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl">
+<span class="text-secondary font-bold text-2xl font-headline">08</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="max-w-[1920px] mx-auto px-12 mb-24">
+<div class="bg-[#0B2C6B] rounded-3xl py-20 px-12 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 translate-x-24"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-white mb-6">Ready to break ground on your next landmark?</h2>
+<p class="text-on-primary-container text-lg mb-10 opacity-80">Partner with Penm'Land Properties for architectural excellence that stands the test of time.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-[#1FC28A] text-white px-10 py-5 rounded-xl font-headline font-bold text-sm tracking-widest transition-transform hover:scale-105 active:scale-95">
+                            CONSULT OUR TEAM
+                        </button>
+<button class="border border-white/20 text-white px-10 py-5 rounded-xl font-headline font-bold text-sm tracking-widest hover:bg-white/10 transition-colors">
+                            DOWNLOAD BROCHURE
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-slate-50 border-t border-slate-200">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-[1920px] mx-auto">
+<div class="space-y-6">
+<div class="h-10">
+<img alt="Penm'Land Properties" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujqN1DTP_2w3-JPpqiBDySmkbqwk_yV4nkTrdBo4pJNgtlra-MDXHQWnO-Laxd4p5v73sl5WX0AMmWUNK6y9hETQFoifpOcWlAbFzjsD_mhMm50nhFKF5Va3oWTz6LdTxsXl5j0QPFam_u-pBTvt6wVGpr-J5tu6XcHO3byOWg8qsm7Lfb6AoqMJIGEJ67WLmxIjU_vcD6Ib1OZtD8XyReD96yqrcx2Z9_84_Kx9ZjJJNbgEoKB-LIgHe1qkEmU3hamO7G3J6T5MoY"/>
+</div>
+<p class="text-slate-500 font-plus-jakarta text-base leading-relaxed">
+                    Setting the gold standard in premium construction and architectural development for over two decades.
+                </p>
+</div>
+<div class="space-y-6">
+<h5 class="text-[#0B2C6B] font-bold uppercase tracking-widest text-sm">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Sustainability Report</a></li>
+<li><a class="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Investor Relations</a></li>
+<li><a class="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Our Team</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="text-[#0B2C6B] font-bold uppercase tracking-widest text-sm">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Cookie Settings</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="text-[#0B2C6B] font-bold uppercase tracking-widest text-sm">Connect</h5>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container cursor-pointer hover:bg-[#1FC28A] hover:text-white transition-all">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container cursor-pointer hover:bg-[#1FC28A] hover:text-white transition-all">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+<p>© 2024 Penm'Land Properties. Built with Precision.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<span>London</span>
+<span>New York</span>
+<span>Dubai</span>
+</div>
+</div>
+</footer>
+</body></html>

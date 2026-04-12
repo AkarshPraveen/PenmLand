@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "outline": "#747781",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f7f9fc",
+                    "on-surface-variant": "#444650",
+                    "secondary": "#1FC28A",
+                    "surface-container-low": "#f2f4f7",
+                    "secondary-container": "#6cfcbf",
+                    "surface-container": "#eceef1",
+                    "surface": "#f7f9fc",
+                    "on-secondary-fixed-variant": "#005237",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "on-tertiary-container": "#999797",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "primary-fixed": "#dae2ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#b2c5ff",
+                    "surface-bright": "#f7f9fc",
+                    "primary-container": "#0B2C6B",
+                    "error-container": "#ffdad6",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed-variant": "#294483",
+                    "on-primary-fixed": "#001848",
+                    "inverse-surface": "#2d3133",
+                    "surface-container-high": "#e6e8eb",
+                    "tertiary": "#1b1b1b",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#191c1e",
+                    "tertiary-container": "#303030",
+                    "surface-dim": "#d8dadd",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#425c9d",
+                    "secondary-fixed-dim": "#1FC28A",
+                    "on-primary-container": "#7d96db",
+                    "on-secondary-fixed": "#002114",
+                    "surface-variant": "#e0e3e6",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c4c6d2",
+                    "on-secondary-container": "#00734f",
+                    "primary": "#0B2C6B",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed": "#6cfcbf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .ambient-shadow {
+            box-shadow: 0px 20px 40px rgba(11, 44, 107, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto w-full">
+<div class="text-2xl font-black tracking-[0.1em] uppercase text-[#0B2C6B] font-headline"><img alt="PENM'LAND" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujqN1DTP_2w3-JPpqiBDySmkbqwk_yV4nkTrdBo4pJNgtlra-MDXHQWnO-Laxd4p5v73sl5WX0AMmWUNK6y9hETQFoifpOcWlAbFzjsD_mhMm50nhFKF5Va3oWTz6LdTxsXl5j0QPFam_u-pBTvt6wVGpr-J5tu6XcHO3byOWg8qsm7Lfb6AoqMJIGEJ67WLmxIjU_vcD6Ib1OZtD8XyReD96yqrcx2Z9_84_Kx9ZjJJNbgEoKB-LIgHe1qkEmU3hamO7G3J6T5MoY"/></div>
+<div class="hidden md:flex items-center space-x-10 font-label text-sm tracking-widest uppercase">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary-container dark:hover:text-white transition-colors" href="#">Portfolio</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary-container dark:hover:text-white transition-colors" href="#">Services</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary-container dark:hover:text-white transition-colors" href="#">About</a>
+<a class="text-primary-container dark:text-white font-bold border-b-2 border-secondary pb-1" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-[#001847] to-[#0B2C6B] text-on-primary px-8 py-3 rounded-xl font-headline text-sm font-bold tracking-wide transition-all hover:scale-95 duration-200">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-12 max-w-[1920px] mx-auto">
+<!-- Header Section -->
+<header class="mb-12 text-center md:text-left">
+<span class="text-secondary text-[10px] font-bold uppercase tracking-[0.2em] font-label mb-2 block">Connect With Us</span>
+<h1 class="text-6xl md:text-7xl font-headline font-extrabold text-primary-container tracking-tight leading-tight">
+                Let's Build Your <br/>
+<span class="text-secondary-fixed-dim">Architectural Vision</span>
+</h1>
+</header>
+<!-- Two-Column Contact Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<!-- Left Column: Contact Form -->
+<section class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow border border-outline-variant/10">
+<form action="#" class="space-y-6" method="POST">
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant font-label">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 text-on-surface focus:ring-2 focus:ring-surface-tint transition-all placeholder:text-outline/50" placeholder="Johnathan Sterling" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant font-label">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 text-on-surface focus:ring-2 focus:ring-surface-tint transition-all placeholder:text-outline/50" placeholder="j.sterling@estate.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant font-label">Project Type</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-none rounded-xl p-4 text-on-surface focus:ring-2 focus:ring-surface-tint transition-all appearance-none">
+<option>Residential Estate</option>
+<option>Commercial Development</option>
+<option>Sustainable Infrastructure</option>
+<option>Renovation &amp; Retrofit</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant font-label">Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl p-4 text-on-surface focus:ring-2 focus:ring-surface-tint transition-all placeholder:text-outline/50 resize-none" placeholder="Describe your architectural requirements..." rows="4"></textarea>
+</div>
+<button class="w-full bg-gradient-to-br from-[#001847] to-[#0B2C6B] text-white font-bold py-5 rounded-xl shadow-lg shadow-primary-container/20 active:scale-[0.98] transition-transform" type="submit">
+                        Send Inquiry
+                    </button>
+</form>
+</section>
+<!-- Right Column: Info + Map -->
+<div class="space-y-8">
+<!-- Contact Cards -->
+<div class="space-y-4">
+<div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-primary-container mb-3" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h3 class="font-headline font-bold text-lg mb-1">London Studio</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            42 Mayfair Square, Westminster<br/>
+                            London, W1J 8HT, United Kingdom
+                        </p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-secondary">
+<span class="material-symbols-outlined text-secondary mb-3" style="font-variation-settings: 'FILL' 1;">call</span>
+<h3 class="font-headline font-bold text-lg mb-1">Direct Line</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Main: +44 20 7946 0128<br/>
+                            Concierge: +44 20 7946 0992
+                        </p>
+</div>
+</div>
+<!-- Map Section -->
+<div class="relative h-64 rounded-xl overflow-hidden shadow-md">
+<img alt="Map of London district" class="w-full h-full object-cover grayscale brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Q4m5KDuhpNdaV5tojqa6yGdrOnjs2lFqLjKU7ZqIcbDixim5UWB2_qGktC_FIWkUo3YgV_69Ez8WvXjMc0Mji_fXYhkpqRCAqxExAvbyM47XMsSC68GG9rrezTrAidgArhQspbKKDNOLNv84mD61A74uKeibxsSKSq8jn4UsvW1qBxkPw2EU-jHf-vcCAdqm4XKnFtFcpniXHn8dwREUeMLClm-P0vTg6pmofatMC2ECLi_uvT8OTXn1eBlMsQXyEX3lzu-NTrtK"/>
+<div class="absolute bottom-4 left-4 z-20 glass-panel p-3 rounded-lg shadow-lg">
+<p class="font-bold text-primary-container text-xs">Penm'Land Global HQ</p>
+<p class="text-[10px] text-on-surface-variant">View on Google Maps</p>
+</div>
+<!-- Map Pin -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+<div class="relative flex items-center justify-center">
+<div class="absolute w-10 h-10 bg-secondary/30 rounded-full animate-ping"></div>
+<div class="relative w-5 h-5 bg-secondary border-2 border-white rounded-full shadow-lg"></div>
+</div>
+</div>
+</div>
+<!-- Operational Hours -->
+<div class="bg-surface-container-high p-6 rounded-xl flex flex-col gap-4 items-center text-center">
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1">Operational Hours</p>
+<p class="font-headline font-bold text-sm">Mon - Fri: 08:00 AM - 06:00 PM</p>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-lowest text-primary-container shadow-sm hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-lowest text-primary-container shadow-sm hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined text-xl">mail</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-white py-24 border-t border-slate-100">
+<div class="max-w-[1920px] mx-auto px-12 flex flex-col items-center gap-12 text-center">
+<div class="flex flex-col items-center gap-8">
+<div class="flex items-center gap-4">
+<img alt="PENM'LAND PROPERTIES" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujqN1DTP_2w3-JPpqiBDySmkbqwk_yV4nkTrdBo4pJNgtlra-MDXHQWnO-Laxd4p5v73sl5WX0AMmWUNK6y9hETQFoifpOcWlAbFzjsD_mhMm50nhFKF5Va3oWTz6LdTxsXl5j0QPFam_u-pBTvt6wVGpr-J5tu6XcHO3byOWg8qsm7Lfb6AoqMJIGEJ67WLmxIjU_vcD6Ib1OZtD8XyReD96yqrcx2Z9_84_Kx9ZjJJNbgEoKB-LIgHe1qkEmU3hamO7G3J6T5MoY"/>
+<span class="text-lg font-black tracking-widest text-[#0B2C6B] uppercase font-headline">PENM'LAND PROPERTIES</span>
+</div>
+<p class="text-on-surface-variant max-w-lg text-sm leading-relaxed">Defining the horizon through intentional architecture and uncompromising standards in London.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
+<a class="hover:text-[#0B2C6B] transition-colors" href="#">Portfolio</a>
+<a class="hover:text-[#0B2C6B] transition-colors" href="#">Services</a>
+<a class="hover:text-[#0B2C6B] transition-colors" href="#">About</a>
+<a class="hover:text-[#0B2C6B] transition-colors" href="#">Legal</a>
+</div>
+<div class="pt-12 w-full">
+<p class="font-label text-xs text-slate-400">© 2024 Penm'Land Properties. Built with Precision.</p>
+</div>
+</div>
+</footer>
+</body></html>

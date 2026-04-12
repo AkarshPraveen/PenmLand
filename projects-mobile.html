@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | Penm'Land Properties</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "outline": "#747781",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f7f9fc",
+                    "on-surface-variant": "#444650",
+                    "secondary": "#1FC28A",
+                    "surface-container-low": "#f2f4f7",
+                    "secondary-container": "#6cfcbf",
+                    "surface-container": "#eceef1",
+                    "surface": "#f7f9fc",
+                    "on-secondary-fixed-variant": "#005237",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "on-tertiary-container": "#999797",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "primary-fixed": "#dae2ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#b2c5ff",
+                    "surface-bright": "#f7f9fc",
+                    "primary-container": "#0B2C6B",
+                    "error-container": "#ffdad6",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed-variant": "#294483",
+                    "on-primary-fixed": "#001848",
+                    "inverse-surface": "#2d3133",
+                    "surface-container-high": "#e6e8eb",
+                    "tertiary": "#1b1b1b",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#191c1e",
+                    "tertiary-container": "#303030",
+                    "surface-dim": "#d8dadd",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#425c9d",
+                    "secondary-fixed-dim": "#4bdfa4",
+                    "on-primary-container": "#7d96db",
+                    "on-secondary-fixed": "#002114",
+                    "surface-variant": "#e0e3e6",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c4c6d2",
+                    "on-secondary-container": "#00734f",
+                    "primary": "#001847",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed": "#6cfcbf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .lithic-button {
+            background: linear-gradient(135deg, #001847 0%, #0B2C6B 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">menu</span>
+<img alt="Penm'Land Properties Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujqN1DTP_2w3-JPpqiBDySmkbqwk_yV4nkTrdBo4pJNgtlra-MDXHQWnO-Laxd4p5v73sl5WX0AMmWUNK6y9hETQFoifpOcWlAbFzjsD_mhMm50nhFKF5Va3oWTz6LdTxsXl5j0QPFam_u-pBTvt6wVGpr-J5tu6XcHO3byOWg8qsm7Lfb6AoqMJIGEJ67WLmxIjU_vcD6Ib1OZtD8XyReD96yqrcx2Z9_84_Kx9ZjJJNbgEoKB-LIgHe1qkEmU3hamO7G3J6T5MoY"/>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-container">search</span>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32">
+<!-- Header Section -->
+<header class="px-6 mb-12">
+<span class="text-on-surface-variant font-label text-xs tracking-[0.2em] uppercase block mb-3">Our Legacy</span>
+<h2 class="text-4xl font-extrabold tracking-tighter text-primary-container leading-tight">
+            Architectural <br/> Masterpieces
+        </h2>
+</header>
+<!-- Filter Bar -->
+<section class="mb-10">
+<div class="flex items-center gap-3 overflow-x-auto px-6 pb-2 no-scrollbar">
+<button class="whitespace-nowrap bg-primary-container text-white px-6 py-2 rounded-full font-label text-sm font-semibold transition-all">All Projects</button>
+<button class="whitespace-nowrap bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-6 py-2 rounded-full font-label text-sm font-semibold transition-all">Residential</button>
+<button class="whitespace-nowrap bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-6 py-2 rounded-full font-label text-sm font-semibold transition-all">Commercial</button>
+<button class="whitespace-nowrap bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-6 py-2 rounded-full font-label text-sm font-semibold transition-all">Restoration</button>
+</div>
+</section>
+<!-- Project Grid (Stacked for Mobile) -->
+<div class="px-6 flex flex-col gap-10">
+<!-- Project Card 1 -->
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Modernist Villa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-yrKrMN8U5Paii1dOG36cIYIVVXh-fCIH5SY-03Kzc3b_g4XuMwwYaB_jAguwqNlDltim96mSP_QTo2JylFpEUmcoqpi2ErAhrCYGP585Sly2Jho9cP65txjVfeIPRr7bAoYrsWRaGtZ0JbUjikD9f0aAJ8XqPywMDP-2VhCVkILx5LN6Bn69QyMmOAvAVkz6lD6bPN89KMJIuQpXlLqf84-jFljvtKqzyHRPodorVkNmnTyn-EDcT3RxT26KItcbQbaY5k-CQNcX"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary text-white px-3 py-1 rounded-lg text-[10px] font-bold tracking-widest uppercase">Award Winner</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary-container">The Obsidian Estate</h3>
+<p class="text-on-surface-variant text-xs mt-1">Cape Town, South Africa</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Concrete</span>
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Glass</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Sustainable HQ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK919V4Qe4xmwiXlshx_plsKEWNu9aaXBsCJ-0Fk0jw2b58ddrcgKO575h1t58S0yqMC7cwBIVZeDcWulyare-lMv3PtqQ-jRZwYfRtlrqoBpGIZfbUr3t95jiMSgyLfGZ-iOmoe13sX6GZ-jrd1bBvkDQAruJkD2Pe5iS3glsPXlcLpvw-DHb_LgaMcrxeJPXqBAaCEhe65HcwL0HoVwNkIVAmyDnxn7bIN1ItSCbNmF6KywF_tRjCgYtEhhfqpRrhGCnJHXFy_Fk"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-fixed-dim text-on-secondary-fixed px-3 py-1 rounded-lg text-[10px] font-bold tracking-widest uppercase">Eco-Certified</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary-container">Veridian Nexus</h3>
+<p class="text-on-surface-variant text-xs mt-1">London, United Kingdom</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Solar</span>
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Net-Zero</span>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Corporate Plaza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAupfpssFqTvNXKfOkSLFRiXtGp6qXEVOhtupwhCUHmFm8Um3KJI32DG0gzBQdrryjJRGQh-CWqpYw-p-qcJlz4sLp25xTPTAq0XaUFoPVw1oaKZrT3uaJSWEvVPSLUYg_zHmTQMR9pMCQxfJ92IrJLdzVXHXb4doRZqbEYHvJozBm-U0c4Vg0mqV7sdhXpyUBJEJSC_uywp9bumPMWT5gAyqxyCRE48IbgUFYhcHwxqqXucQkk4YL8cKY44rPxwziwKOTrZbtLrRAy"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary-container">Zenith Pavilion</h3>
+<p class="text-on-surface-variant text-xs mt-1">Dubai, UAE</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Steel</span>
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">High-Rise</span>
+</div>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Minimalist Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH_E8vPrlq9DuD1b754KaiYf1BC4gk6XakhUwGdHN3yzVAFnk0txQbqYjk8UtmqC9nRfq62uMkum4_0_6_S3eXtCUs_aScrt_ecs6Wy1ZqOlFAy-xp36hAHaSlApbTxBJxwaFpJQEtDqy8uC2usjFn_NaIIDVmtOrdj9OMDeS6Vkyml5PXurft-oviIuWVThNM5GE4O0db402fR8gZ575nEcz7PMkkYJXxzhqavA6L2KhAcKVacxpi2tAOvwtqMBA_Xe46snJRi4E4"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary-container">Ether Loft</h3>
+<p class="text-on-surface-variant text-xs mt-1">New York, USA</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Minimal</span>
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Adaptive Reuse</span>
+</div>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Coastal Retreat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHsMDKsT0aPcroM62PBFjkKGDW4tbo5DgBEwAybYk9dbqgVcV9yHdOcdfUVdde0PLj1B1vlGL9cuKxX1HUY84i1rq9HTM22cfRmczcwB3X-MkHkkT0mldVdogTn-0Bwmkn__kqQn7DMfjaXxIBDUW1zgsrOTBeJCGqUGQFzjLs8GaKtwxaqhz8H_U3QdnGGl7rMC4e8ZyIrhbt8AVjwsGnAO8oGplvbRGutkoRxefFF_rk-YLMuXJ4r0IeQBZPO5MNY64BdHz0LfCa"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary-container">Tide &amp; Stone</h3>
+<p class="text-on-surface-variant text-xs mt-1">Lisbon, Portugal</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Brutalist</span>
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Coast</span>
+</div>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Cultural Hub" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ZP770g9yYBawLBfee3CKRvausatUUcUjBE0MMne602UmxEep2p_joKFrPo01NjmyoOJPtGJ4c2Gzwk_c7DFFEmku1WgqTrnuLG2YRlyRO4XNACBdJg1-vK1EqxncYb8WxoZhlwj2x1s7xQNaljKtQeu3C9kpyVHYqPbQkPjxSYGpheo8DDrPgnDhgFMsrEBEhDrFi5Y5DVmhg0rWA8Bi5vh6jDiEXWdSpT8Nbrbc4_rEsC0rohgfQ74EdKaMHpCVTKJSQ3mNleAt"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-white px-3 py-1 rounded-lg text-[10px] font-bold tracking-widest uppercase">Cultural Landmark</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary-container">Echo Gallery</h3>
+<p class="text-on-surface-variant text-xs mt-1">Tokyo, Japan</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Parametric</span>
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-3 py-1 rounded-full uppercase tracking-tighter">Culture</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More Section -->
+<div class="mt-20 px-6 flex flex-col items-center">
+<p class="text-on-surface-variant text-sm font-label mb-6">Discover 24 more projects in our archive</p>
+<button class="w-full py-4 border border-outline-variant hover:border-primary-container text-primary-container font-bold rounded-xl transition-all duration-300">
+            View Full Archive
+        </button>
+</div>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-100 bg-white px-8 py-12 flex flex-col items-center gap-8">
+<div class="text-center space-y-6">
+<img alt="PENM'LAND PROPERTIES" class="h-12 w-auto object-contain mx-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujqN1DTP_2w3-JPpqiBDySmkbqwk_yV4nkTrdBo4pJNgtlra-MDXHQWnO-Laxd4p5v73sl5WX0AMmWUNK6y9hETQFoifpOcWlAbFzjsD_mhMm50nhFKF5Va3oWTz6LdTxsXl5j0QPFam_u-pBTvt6wVGpr-J5tu6XcHO3byOWg8qsm7Lfb6AoqMJIGEJ67WLmxIjU_vcD6Ib1OZtD8XyReD96yqrcx2Z9_84_Kx9ZjJJNbgEoKB-LIgHe1qkEmU3hamO7G3J6T5MoY"/>
+<p class="text-on-surface-variant max-w-xs text-xs">Defining the horizon through intentional architecture and uncompromising construction standards.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+<a href="#">Portfolio</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Legal</a>
+</div>
+<div class="pt-8 border-t border-surface-container w-full text-center">
+<p class="font-label text-[10px] text-slate-400 mb-4">© 2024 Penm'Land Properties. Architectural Excellence.</p>
+<div class="flex justify-center gap-4 text-emerald-600 font-bold text-[10px]">
+<span>ISO 9001 Certified</span>
+<span>LEED Gold Partner</span>
+</div>
+</div>
+</footer>
+</main>
+<!-- FAB -->
+<!-- BottomNavBar -->
+</body></html>
