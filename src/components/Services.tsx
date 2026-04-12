@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { servicesData } from '../data/services';
 
 type ServiceCardProps = {
   icon: string;
@@ -20,40 +21,14 @@ function ServiceCard({ icon, title, description, mobileOnly }: ServiceCardProps)
 }
 
 export default function Services() {
-  const services = [
-    {
-      icon: 'construction',
-      title: 'Construction',
-      description: 'Professional building solutions tailored to specific project requirements.'
-    },
-    {
-      icon: 'weekend',
-      title: 'Interior',
-      description: 'Curated indoor aesthetics that blend functionality with premium materials.'
-    },
-    {
-      icon: 'domain',
-      title: 'Exterior',
-      description: 'Elevating building facades with durable and iconic architectural elements.'
-    },
-    {
-      icon: 'park',
-      title: 'Landscape',
-      description: 'Harmonious outdoor environments that connect structures with nature.'
-    },
-    {
-      icon: 'mop',
-      title: 'Renovation',
-      description: 'Expert structural updates and modernizations for legacy properties.',
-      mobileOnly: true
-    },
-    {
-      icon: 'gavel',
-      title: 'Legal Documentation',
-      description: 'Seamless handling of permits, land rights, and architectural compliance.',
-      mobileOnly: true
-    }
-  ];
+  const services = servicesData
+    .filter(service => service.showOnHome)
+    .map(service => ({
+      icon: service.icon,
+      title: service.title,
+      description: service.shortDescription,
+      mobileOnly: service.mobileOnlyHome
+    }));
 
   return (
     <section className="py-16 md:py-32 px-6 md:px-0 bg-surface">

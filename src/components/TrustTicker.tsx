@@ -1,9 +1,6 @@
+import { tickerItems as items } from '../data/ticker';
+
 export default function TrustTicker() {
-  const items = [
-    { icon: 'check_circle', text: '20+ Projects Completed' },
-    { icon: 'history', text: '5+ Years Experience' },
-    { icon: 'architecture', text: 'Architectural Excellence' }
-  ];
 
   return (
     <section className="bg-surface-container-highest py-10 md:py-12 overflow-hidden">
