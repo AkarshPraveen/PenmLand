@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 type ServiceCardProps = {
   icon: string;
   title: string;
@@ -71,9 +73,9 @@ export default function Services() {
           ))}
         </div>
         <div className="mt-10 md:mt-16 flex justify-center text-center">
-          <button className="editorial-gradient text-white w-full md:w-auto px-10 py-4 md:py-5 rounded-xl font-bold ambient-shadow hover:-translate-y-1 md:hover:translate-y-[-2px] transition-transform">
+          <Link to="/services" className="editorial-gradient text-white flex items-center justify-center w-full md:w-auto px-10 py-4 md:py-5 rounded-xl font-bold ambient-shadow hover:-translate-y-1 md:hover:translate-y-[-2px] transition-transform">
             Explore All Services
-          </button>
+          </Link>
         </div>
       </div>
     </section>

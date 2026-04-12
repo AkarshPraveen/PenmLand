@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className="relative pt-12 md:pt-32 pb-16 md:pb-24 overflow-hidden md:min-h-screen flex items-center bg-surface-container-lowest px-6 md:px-0">
@@ -15,9 +17,9 @@ export default function Hero() {
             <span className="md:hidden">We transcend the standard of high-end construction by merging structural precision with a visionary aesthetic. Every project is a curated masterpiece.</span>
           </p>
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 justify-center lg:justify-start">
-            <button className="editorial-gradient text-white w-full md:w-auto px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold ambient-shadow hover:-translate-y-1 md:hover:translate-y-[-2px] active:scale-95 transition-transform md:transition-transform">
+            <Link to="/projects" className="editorial-gradient text-white flex items-center justify-center w-full md:w-auto px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold ambient-shadow hover:-translate-y-1 md:hover:translate-y-[-2px] active:scale-95 transition-transform md:transition-transform">
               Explore Portfolio
-            </button>
+            </Link>
             <button className="border border-outline-variant/30 text-primary w-full md:w-auto px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold active:bg-surface-container-low hover:bg-surface-container-low transition-colors">
               Our Vision
             </button>
