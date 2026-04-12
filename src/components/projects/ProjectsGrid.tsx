@@ -1,11 +1,18 @@
+import { useState, useEffect } from 'react';
+import { PROJECTS_DATA } from '../../data/projects';
+
 interface ProjectsGridProps {
   activeFilter: string;
   searchQuery: string;
 }
 
-import { PROJECTS_DATA } from '../../data/projects';
-
 export default function ProjectsGrid({ activeFilter, searchQuery }: ProjectsGridProps) {
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  useEffect(() => {
+    setVisibleCount(6);
+  }, [activeFilter, searchQuery]);
+
   const filteredProjects = PROJECTS_DATA.filter((project) => {
     const matchesFilter = activeFilter === "All Projects" || project.category === activeFilter;
     const searchLower = searchQuery.toLowerCase();
@@ -18,6 +25,9 @@ export default function ProjectsGrid({ activeFilter, searchQuery }: ProjectsGrid
     return matchesFilter && matchesSearch;
   });
 
+  const visibleProjects = filteredProjects.slice(0, visibleCount);
+  const remainingProjects = filteredProjects.length - visibleCount;
+
   return (
     <>
       {filteredProjects.length === 0 ? (
@@ -27,7 +37,7 @@ export default function ProjectsGrid({ activeFilter, searchQuery }: ProjectsGrid
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-          {filteredProjects.map((project) => (
+          {visibleProjects.map((project) => (
             <article
               key={project.id}
               className="group relative flex flex-col bg-surface-container-lowest md:bg-transparent rounded-xl md:rounded-none overflow-hidden md:overflow-visible shadow-sm md:shadow-none transition-all duration-500"
@@ -82,12 +92,15 @@ export default function ProjectsGrid({ activeFilter, searchQuery }: ProjectsGrid
       )}
 
       {/* Load More Section */}
-      {filteredProjects.length > 0 && (
+      {remainingProjects > 0 && (
         <div className="mt-20 flex flex-col items-center justify-center text-center">
           <p className="text-on-surface-variant text-xs md:text-sm font-medium mb-6 font-label">
-            Discover 24 more projects in our archive
+            Discover {remainingProjects} more {remainingProjects === 1 ? 'project' : 'projects'} in our archive
           </p>
-          <button className="w-full md:w-auto px-12 py-4 border border-outline-variant hover:border-primary-container text-primary-container font-bold rounded-xl transition-all duration-300">
+          <button 
+            onClick={() => setVisibleCount(filteredProjects.length)}
+            className="w-full md:w-auto px-12 py-4 border border-outline-variant hover:border-primary-container text-primary-container font-bold rounded-xl transition-all duration-300"
+          >
             View Full Archive
           </button>
         </div>
