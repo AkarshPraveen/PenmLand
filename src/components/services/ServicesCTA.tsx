@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ServicesCTA() {
   return (
     <>
@@ -13,9 +15,9 @@ export default function ServicesCTA() {
               Partner with Penm'Land Properties for architectural excellence that stands the test of time.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-secondary text-white px-10 py-5 rounded-xl font-headline font-bold text-sm tracking-widest transition-transform hover:scale-105 active:scale-95">
+              <Link to="/contact" className="inline-block bg-secondary text-white px-10 py-5 rounded-xl font-headline font-bold text-sm tracking-widest transition-transform hover:scale-105 active:scale-95">
                 CONSULT OUR TEAM
-              </button>
+              </Link>
               <button className="border border-white/20 text-white px-10 py-5 rounded-xl font-headline font-bold text-sm tracking-widest hover:bg-white/10 transition-colors">
                 DOWNLOAD BROCHURE
               </button>
@@ -35,9 +37,9 @@ export default function ServicesCTA() {
             Partner with Penm'Land Properties for architectural excellence that stands the test of time.
           </p>
           <div className="flex flex-col gap-4">
-            <button className="bg-secondary text-white py-4 rounded-xl font-headline font-bold text-[10px] uppercase tracking-[0.2em] shadow-lg shadow-emerald-500/20 active:scale-95 transition-transform">
+            <Link to="/contact" className="w-full text-center bg-secondary text-white py-4 rounded-xl font-headline font-bold text-[10px] uppercase tracking-[0.2em] shadow-lg shadow-emerald-500/20 active:scale-95 transition-transform">
               CONSULT OUR TEAM
-            </button>
+            </Link>
             <button className="border border-white/30 text-white py-4 rounded-xl font-headline font-bold text-[10px] uppercase tracking-[0.2em] active:bg-white/10 transition-colors">
               DOWNLOAD BROCHURE
             </button>
