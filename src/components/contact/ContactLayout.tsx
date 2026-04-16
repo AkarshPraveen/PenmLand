@@ -72,10 +72,10 @@ export default function ContactLayout() {
             >
               location_on
             </span>
-            <h3 className="font-headline font-bold text-lg mb-1">London Studio</h3>
+            <h3 className="font-headline font-bold text-lg mb-1">Kannur Office</h3>
             <p className="text-on-surface-variant text-sm leading-relaxed">
-              42 Mayfair Square, Westminster<br />
-              London, W1J 8HT, United Kingdom
+              Near Kannur South Railway Station <br />
+              Kerala, India
             </p>
           </div>
           <div className="bg-surface-container-low p-6 rounded-xl border-l-4 border-secondary">
@@ -87,32 +87,34 @@ export default function ContactLayout() {
             </span>
             <h3 className="font-headline font-bold text-lg mb-1">Direct Line</h3>
             <p className="text-on-surface-variant text-sm leading-relaxed">
-              Main: +44 20 7946 0128<br />
-              Concierge: +44 20 7946 0992
+              Main: +91 99957 64324<br />
             </p>
           </div>
         </div>
 
         {/* Map Section */}
-        <section className="relative group h-64 rounded-xl overflow-hidden ambient-shadow">
-          <div className="absolute inset-0 bg-primary-container/10 z-10 pointer-events-none transition-colors"></div>
+        <a href="https://maps.app.goo.gl/PTbASmtf1SaTgSMw9?g_st=iw" target="_blank" rel="noopener noreferrer" className="relative group block h-64 rounded-xl overflow-hidden ambient-shadow cursor-pointer transition-transform hover:scale-[1.02]">
+          <div className="absolute inset-0 bg-primary-container/10 z-10 pointer-events-none group-hover:bg-transparent transition-colors"></div>
           <img
             alt="Map district"
-            className="w-full h-full object-cover grayscale brightness-90"
+            className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-500"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Q4m5KDuhpNdaV5tojqa6yGdrOnjs2lFqLjKU7ZqIcbDixim5UWB2_qGktC_FIWkUo3YgV_69Ez8WvXjMc0Mji_fXYhkpqRCAqxExAvbyM47XMsSC68GG9rrezTrAidgArhQspbKKDNOLNv84mD61A74uKeibxsSKSq8jn4UsvW1qBxkPw2EU-jHf-vcCAdqm4XKnFtFcpniXHn8dwREUeMLClm-P0vTg6pmofatMC2ECLi_uvT8OTXn1eBlMsQXyEX3lzu-NTrtK"
           />
-          <div className="absolute bottom-4 left-4 z-20 bg-white/80 backdrop-blur-md p-3 rounded-lg shadow-lg">
-            <p className="font-bold text-primary-container text-xs">Penm'Land Global HQ</p>
-            <p className="text-[10px] text-on-surface-variant">View on Google Maps</p>
+          <div className="absolute bottom-4 left-4 z-20 bg-white/80 backdrop-blur-md p-3 rounded-lg shadow-lg group-hover:bg-white transition-colors">
+            <p className="font-bold text-primary-container text-xs">Penmland</p>
+            <p className="text-[10px] text-primary-container font-bold flex items-center gap-1 mt-1">
+              View on Google Maps
+              <span className="material-symbols-outlined text-[12px]">open_in_new</span>
+            </p>
           </div>
           {/* Map Pin */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
             <div className="relative flex items-center justify-center">
-              <div className="absolute w-10 h-10 bg-secondary/30 rounded-full animate-ping"></div>
-              <div className="relative w-5 h-5 bg-secondary border-2 border-white rounded-full shadow-lg"></div>
+              <div className="absolute w-10 h-10 bg-secondary/30 rounded-full animate-ping group-hover:bg-secondary/50"></div>
+              <div className="relative w-5 h-5 bg-secondary border-2 border-white rounded-full shadow-lg group-hover:scale-110 transition-transform"></div>
             </div>
           </div>
-        </section>
+        </a>
 
         {/* Operational Hours */}
         <div className="bg-surface-container-high p-6 md:p-8 rounded-xl flex flex-col gap-4 md:gap-6 items-center text-center">

@@ -2,32 +2,50 @@ import logo from '../assets/logo.png';
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-slate-100 bg-white px-8 py-12 md:py-24">
-      <div className="max-w-[1920px] mx-auto md:px-12 flex flex-col items-center gap-8 md:gap-12">
-        <div className="text-center space-y-6 flex flex-col items-center">
-          <img
-            alt="PENM'LAND PROPERTIES"
-            className="h-12 md:h-16 w-auto object-contain mx-auto"
-            src={logo}
-          />
-          <p className="text-on-surface-variant max-w-xs md:max-w-md text-xs md:text-sm mx-auto">
-            Defining the horizon through intentional architecture and uncompromising <span className="md:hidden">construction </span>standards.
-          </p>
-        </div>
-        <div className="flex flex-row md:flex-row flex-wrap justify-center items-center gap-x-6 gap-y-3 md:gap-12 text-[10px] md:text-xs font-bold uppercase md:tracking-[0.2em] tracking-widest text-slate-400">
-          <a className="hover:text-[#0B2C6B] transition-colors" href="#">Portfolio</a>
-          <a className="hover:text-[#0B2C6B] transition-colors" href="#">Services</a>
-          <a className="hover:text-[#0B2C6B] transition-colors" href="#">About</a>
-          <a className="hover:text-[#0B2C6B] transition-colors" href="#">Legal</a>
-        </div>
-        <div className="pt-8 md:pt-12 border-t border-surface-container w-full text-center">
-          <p className="font-label text-[10px] md:text-xs text-slate-400 md:mb-0 mb-4">
-            © 2024 Penm'Land Properties. <span className="hidden md:inline">Built with Precision.</span><span className="md:hidden">Architectural Excellence.</span>
-          </p>
-          <div className="flex md:hidden justify-center gap-4 text-emerald-600 font-bold text-[10px]">
-            <span>ISO 9001 Certified</span>
-            <span>LEED Gold Partner</span>
+    <footer className="w-full bg-slate-50 border-t border-slate-200">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-[1920px] mx-auto">
+        <div className="space-y-6">
+          <div className="h-10">
+            <img alt="Penm'Land Properties" className="h-full w-auto object-contain" src={logo}/>
           </div>
+          <p className="text-slate-500 font-plus-jakarta text-base leading-relaxed">
+                              Setting the gold standard in premium construction and architectural development for over two decades.
+                          </p>
+        </div>
+        <div className="space-y-6">
+          <h5 className="text-[#0B2C6B] font-bold uppercase tracking-widest text-sm">Company</h5>
+          <ul className="space-y-4">
+            <li><a className="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Sustainability Report</a></li>
+            <li><a className="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Investor Relations</a></li>
+            <li><a className="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div className="space-y-6">
+          <h5 className="text-[#0B2C6B] font-bold uppercase tracking-widest text-sm">Legal</h5>
+          <ul className="space-y-4">
+            <li><a className="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Privacy Policy</a></li>
+            <li><a className="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Terms of Service</a></li>
+            <li><a className="text-slate-500 hover:text-[#0B2C6B] transition-colors" href="#">Cookie Settings</a></li>
+          </ul>
+        </div>
+        <div className="space-y-6">
+          <h5 className="text-[#0B2C6B] font-bold uppercase tracking-widest text-sm">Connect</h5>
+          <div className="flex gap-4">
+            <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container cursor-pointer hover:bg-[#1FC28A] hover:text-white transition-all">
+              <span className="material-symbols-outlined text-xl">share</span>
+            </div>
+            <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container cursor-pointer hover:bg-[#1FC28A] hover:text-white transition-all">
+              <span className="material-symbols-outlined text-xl">mail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="px-12 py-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+        <p>© 2024 Penm'Land Properties. Built with Precision.</p>
+        <div className="flex gap-8 mt-4 md:mt-0">
+          <span>London</span>
+          <span>New York</span>
+          <span>Dubai</span>
         </div>
       </div>
     </footer>
