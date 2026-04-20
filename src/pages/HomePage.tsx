@@ -16,7 +16,7 @@ export default function HomePage() {
       <main className="md:pt-0 pt-[60px] pb-24 md:pb-0">
         <Hero />
         <TrustTicker />
-        <Services />
+        <Services limit={3} />
         <CaseStudy />
         <Testimonials />
         <CTA />

@@ -20,8 +20,12 @@ function ServiceCard({ icon, title, description, mobileOnly }: ServiceCardProps)
   );
 }
 
-export default function Services() {
-  const services = servicesData
+type ServicesProps = {
+  limit?: number;
+};
+
+export default function Services({ limit }: ServicesProps = {}) {
+  let services = servicesData
     .filter(service => service.showOnHome)
     .map(service => ({
       icon: service.icon,
@@ -29,6 +33,10 @@ export default function Services() {
       description: service.shortDescription,
       mobileOnly: service.mobileOnlyHome
     }));
+
+  if (limit) {
+    services = services.slice(0, limit);
+  }
 
   return (
     <section className="py-16 md:py-32 px-6 md:px-0 bg-surface">
@@ -42,7 +50,7 @@ export default function Services() {
             From conceptual blueprints to the final touch of paint, <span className="md:hidden">our services are </span>delivered with surgical precision.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${limit === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4'} gap-4 md:gap-8`}>
           {services.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}

@@ -1,3 +1,5 @@
+import case_study from '../assets/case_study.jpg';
+
 export default function CaseStudy() {
   return (
     <section className="py-16 md:py-32 bg-surface-container-low px-6 md:px-0 overflow-hidden">
@@ -8,7 +10,7 @@ export default function CaseStudy() {
               <img
                 className="w-full h-full object-cover"
                 alt="minimalist architectural shot"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqo83kliVVs9axnKc8KhH8U5Z1BYviGgD9EipWYLduMpGmoGsYBJHOQZLIX3e7aq0SDxjN9AF3TjkLppc_R71W-E5uhPAy8SNG8cwtN4t8tLeYxPyEzrxMo-KE7DvhTYLT_gRMVio3mo7mmI0obAuogLkj5_LQBZl4qwxcKbaEZbKVvcOweFuY2GrqHptovebANg4aqH9ZaWLCvaPyASOZ3YWMhfA4KzA_8g_mpSOJMbW1DFFU-IfsOxrNlga4H_jW5o0kBwslLN7y"
+                src={case_study}
               />
             </div>
             <div className="absolute top-6 left-6 md:top-8 md:left-8 bg-secondary text-white px-4 py-2 md:px-6 md:py-3 rounded-lg md:rounded-xl font-bold text-[10px] md:text-[12px] uppercase ambient-shadow md:tracking-widest z-10">
@@ -36,12 +38,12 @@ export default function CaseStudy() {
                 <p className="text-[10px] md:text-xs text-on-surface-variant uppercase tracking-widest font-bold md:mt-2">Carbon Footprint</p>
               </div>
             </div>
-            <button className="flex items-center gap-3 md:gap-4 text-primary font-bold group text-sm md:text-lg">
+            {/* <button className="flex items-center gap-3 md:gap-4 text-primary font-bold group text-sm md:text-lg">
               View Project Details
               <span className="material-symbols-outlined text-lg md:text-base group-hover:translate-x-2 transition-transform">
                 arrow_forward
               </span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

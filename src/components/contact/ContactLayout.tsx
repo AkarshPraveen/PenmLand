@@ -17,12 +17,12 @@ export default function ContactLayout() {
             </div>
             <div className="space-y-2">
               <label className="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant font-label">
-                Email Address
+                Phone Number
               </label>
               <input
                 className="w-full bg-surface-container-low border-none rounded-xl p-4 md:px-6 md:py-4 focus:ring-2 focus:ring-surface-tint focus:bg-surface-container-lowest transition-all placeholder:text-outline/50"
-                placeholder="j.sterling@estate.com"
-                type="email"
+                placeholder="+91 99957 64324"
+                type="number"
               />
             </div>
           </div>
